@@ -1,6 +1,6 @@
 <?php
 
-use UniSharp\LaravelFilemanager\Lfm;
+
 
 
 
@@ -49,6 +49,6 @@ Route::prefix('admin')->middleware(['auth', 'admin'])->group(function () {
     });
 });
 
-// Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth', 'admin']], function () {
-//     Lfm::routes();
-// });
+Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth', 'admin']], function () {
+    \UniSharp\LaravelFilemanager\Lfm::routes();
+});

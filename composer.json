@@ -2,7 +2,10 @@
     "name": "laravel/laravel",
     "type": "project",
     "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
     "license": "MIT",
     "require": {
         "php": "^8.1",
@@ -15,8 +18,15 @@
         "laravel/socialite": "^5.6",
         "laravel/tinker": "^2.8",
         "livewire/livewire": "^2.12",
-        "spatie/laravel-medialibrary": "^10.0.0"
+        "spatie/laravel-medialibrary": "^10.0.0",
+        "unisharp/laravel-filemanager": "dev-master"
     },
+    "repositories": [
+        {
+            "url": "https://github.com/itsourov/laravel-filemanager.git",
+            "type": "git"
+        }
+    ],
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
         "laravel/pint": "^1.0",
