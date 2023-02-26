@@ -15,7 +15,7 @@ var editor_config = {
     path_absolute: "/",
     selector: '.tinymceEditor',
     relative_urls: false,
-    plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
+    plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount fullscreen',
     skin: skin,
     content_css: content_css,
     extended_valid_elements: 'img[class|src|alt|title|width|loading=lazy]',
@@ -34,7 +34,7 @@ var editor_config = {
             }
         });
     },
-    toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image media",
+    toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image media fullscreen",
     file_picker_callback: function (callback, value, meta) {
         var x = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName(
             'body')[0].clientWidth;

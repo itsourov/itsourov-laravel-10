@@ -15,3 +15,8 @@ Alpine.start()
 
 import jQuery from 'jquery';
 window.$ = jQuery;
+
+$(".accordation").click(function () {
+    $(this).next().slideToggle(100)
+
+});
