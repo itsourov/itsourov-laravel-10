@@ -15,16 +15,17 @@ class DatabaseSeeder extends Seeder
     {
         \App\Models\User::factory(10)->create();
 
-        foreach (\App\Models\User::all() as $user) {
-            $user->addMediaFromUrl(fake()->imageUrl())
+        // foreach (\App\Models\User::all() as $user) {
+        //     $user->addMediaFromUrl(fake()->imageUrl())
 
-                ->toMediaCollection('profileImages', 'profile-image');
-        }
+        //         ->toMediaCollection('profileImages', 'profile-image');
+        // }
 
 
-        $this->call(PostSeeder::class);
-        $this->call(CommentSeeder::class);
-        $this->call(CategorySeeder::class);
+        // $this->call(PostSeeder::class);
+        // $this->call(CommentSeeder::class);
+        // $this->call(CategorySeeder::class);
+        $this->call(MediaFileSeeder::class);
 
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',

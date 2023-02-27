@@ -41,7 +41,7 @@ var editor_config = {
         var y = window.innerHeight || document.documentElement.clientHeight || document
             .getElementsByTagName('body')[0].clientHeight;
 
-        var cmsURL = editor_config.path_absolute + 'laravel-filemanager?editor=' + meta.fieldname;
+        var cmsURL = editor_config.path_absolute + 'mediafiles?editor=' + meta.fieldname;
         if (meta.filetype == 'image') {
             cmsURL = cmsURL + "&type=Images";
         } else {

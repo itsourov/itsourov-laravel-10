@@ -84,7 +84,7 @@
             let button = document.getElementById(id);
 
             button.addEventListener('click', function() {
-                var route_prefix = (options && options.prefix) ? options.prefix : '/laravel-filemanager';
+                var route_prefix = (options && options.prefix) ? options.prefix : '/mediafiles';
                 var target_input = document.getElementById(button.getAttribute('data-input'));
                 var target_preview = document.getElementById(button.getAttribute('data-preview'));
 
